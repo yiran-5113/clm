@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="one"></div>
+		<div class="two">
+			<p>找到这个p标签</p>
+		</div>
+		<div id="box">
+			点击
+		</div>
+	</body>
+	<script type="text/javascript">
+		var divs = document.getElementsByClassName("two");
+		var a = divs[0].getElementsByTagName("p");
+		console.log(a);
+		var b = document.getElementById("box");
+		var body = document.body;
+		b.onclick = function(){
+		body.style.backgroundColor = "red"
+		}
+		var num1 = 89;
+		var num2 = 99;
+		var num3 = 122;
+		var max = num1 > num2 ? num1 : num2;
+		max = max > num3 ? max : num3;
+		console.log(max);
+		var min = num1 < num2 ? num1 : num2;
+		min = min < num3 ? min : num3;
+		console.log(min);
+	</script>
+</html>

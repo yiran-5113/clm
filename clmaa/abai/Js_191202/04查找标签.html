@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="t1">
+			<p>找这个</p>
+			<p>找这个</p>
+		</div>
+		<div class="content">
+			<div class="one"></div>
+			<p class="one">还有这个</p>
+			<p class="one">还有这个</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var id = document.getElementById("t1");
+		var p = t1.getElementsByTagName("p");
+		//id是唯一的
+		console.log(p[0],p[1]);
+		var divs = document.getElementsByClassName("content");
+		var p = id.getElementsByTagName("p");
+		console.log(p[0],p[1]);
+		divs[0].getElementsByTagName("p");
+		//class是多个 divs[0]表示一个数组
+		console.log()
+		
+	</script>
+</html>

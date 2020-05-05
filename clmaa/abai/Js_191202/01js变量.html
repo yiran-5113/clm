@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script src="js/main.js" type="text/javascript" charset="utf-8">
+		console.log("hello world");
+		<!-- 内部引入 JS文件-->
+	</script>
+	<script type="text/javascript">
+		console.log("nihao");
+		// 直接写代码
+		//控制台输出,可以在浏览器的控制台console中查看输出的数据
+		//js是弱类型的语言 所以数据类型的区分是借助浏览器的解析进行判断换
+		//在js中定义变量,关键字===var
+		//赋值号
+		var a = 10;
+		var b = 10.9;
+		var c = "nihao";
+		var d = 'justin';
+		console.log(a,b,c,d);
+		//typeof
+		console.log(typeof a);
+		console.log(typeof b);
+		console.log(typeof c);
+		console.log(typeof d);
+		a = "冰阔落";
+		console.log(typeof a);
+		//变量名的定义规则
+		//1 不要使用关键字
+		//2 见名思意
+		//3 变量名的组成可以是数字,字母,下划线,但是不要以数字开头
+		// NaN 
+		//js中的数据类型
+		//1 number 数字类型(整数，小数)
+		// NaN 特殊的数字类型,是不合法的运算结果
+		//2 string 字符串(不区分单双引号)
+		//3 undefined 未定义类型(就是声明了变量但没有赋值)
+		//4 object 对象类型
+		var e;
+			console.log(typeof e);
+		// 4 对象类型
+		var student = {
+			name : "justin",
+			age : 25,
+			sex : 'boy'
+		};
+		console.log(student ,typeof student);
+	</script>
+</html>
